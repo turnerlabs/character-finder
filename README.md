@@ -20,14 +20,14 @@ Run the  following commands
 **The following instuctions only creates training and evaluation records for one character - Santa. If you want to train on more characters, follow these [instructions](#abcd) first**
 
 * After the csv points to the correct location, we can generate the record files
- ``` bash
-# Generate training record
-python --csv_input train.csv --output_path train.record --label_map_path characters_label_map.pbtext 
-``` 
-``` bash
-# Generate evaluation record
-python --csv_input eval.csv --output_path eval.record --label_map_path characters_label_map.pbtext 
-```
+	 ``` bash
+	# Generate training record
+	python --csv_input train.csv --output_path train.record --label_map_path characters_label_map.pbtext 
+	``` 
+	``` bash
+	# Generate evaluation record
+	python --csv_input eval.csv --output_path eval.record --label_map_path characters_label_map.pbtext 
+	```
 
 
 ## Training
