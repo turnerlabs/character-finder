@@ -36,6 +36,7 @@ Run the following commands
 	` python detect_labels.py --annotation_file PATH_TO_CSV --images characters/ `
 **Note: Already existing train.csv and eval.csv have bounding box information for images of Santa Claus**
 * Label the images by clicking on the top left of the characters face first and then on the bottom right
+----
 ![](https://media.giphy.com/media/xUNd9BNT18JAOzc0wM/giphy.gif)
 </details>
 
