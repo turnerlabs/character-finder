@@ -22,7 +22,7 @@ Run the following commands
 <a name="abcd"></a>
 
 <details>
-<summary><h3>Training on Other Characters</h3></summary>
+<h3><summary>Training on Other Characters</summary></h3>
 <p>Will ad some information here</p>
 </details>
 
