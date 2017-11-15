@@ -6,7 +6,7 @@
 <details>
 <summary><b>For Santa Claus</b></summary>
 
-* Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
+* Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) images in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
 **This only downloads the images for Santa Claus.**
 
 Run the following commands 
