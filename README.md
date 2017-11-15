@@ -116,5 +116,7 @@ For training, construct an object-detection training pipeline.
 	tensorboard --logdir PATH_TO_CHECKPOINT_DIR
 	```
 
-
-
+## Exporting the model
+* To export the model, choose a checkpoint # to export. For example to export checkpoint no. 130912
+	```
+	python object_detection/export_inference_graph --input_type image_tensor --pipeline_congif_path PATH_TO_CONFIG_FILE --trained_checkpoint_prefix PATH_TO_CHECKPOINT/model.ckpt-130912 --output_directory PATH_TO_EXPORT_MODEL
