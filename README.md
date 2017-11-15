@@ -21,7 +21,7 @@ Run the following commands
 ```
 <a name="abcd"></a>
 
-<details><h3>Training on Other Characters</h3>
+<details open><h3>Training on Other Characters</h3>
 </details>
 
 ## Generating record files
