@@ -22,11 +22,11 @@ Run the following commands
 <a name="abcd"></a>
 
 <details>
-<summary><b>Training on Other Characters</b></summary>
+<summary>## Training on Other Characters</summary>
 * Make a new directory in the character-finder/characters folder and name it the character. For example
 	` mkdir characters/foobar `
 * Save all images of that character in that directory
-
+</details>
 
 ## Generating record files
 
@@ -72,5 +72,5 @@ For training you need to construct an object-detection training pipeline.
 		}
 		```
 		Change the ` input_path: "PATH_TO_BE_CONFIGURED/eval.record" ` to point to the eval.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the appropriate label map
-</details>
+
 
