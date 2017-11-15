@@ -23,7 +23,7 @@ Run the following commands
 
 <details>
 <h3>
-<summary>Training on Other Characters</summary>
+<summary color: black>Training on Other Characters</summary>
 </h3>
 <p>Will ad some information here</p>
 </details>
