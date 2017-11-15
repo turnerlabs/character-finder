@@ -3,7 +3,7 @@
 ## Prerequisites 
 * Make sure you have the prerequisites for the Object Detection API installed. The directions for installations can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 
-### For Santa Claus (For other characters follow these [instructions](#abcd))
+** For Santa Claus (For other characters follow these [instructions](#abcd)) **
 * Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
 ** This only downloads the images for Santa Claus.
 
@@ -22,10 +22,10 @@ Run the following commands
 <a name="abcd"></a>
 
 <details>
-<h3>
-<summary color: black>Training on Other Characters</summary>
-</h3>
-<p>Will ad some information here</p>
+<summary><b>Training on Other Characters</b></summary>
+* Make a new directory in the character-finder/characters folder and name it the character. For example
+	` mkdir characters/foobar `
+* Save all images of that character in that directory
 </details>
 
 ## Generating record files
