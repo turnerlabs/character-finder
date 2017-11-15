@@ -23,7 +23,7 @@ Run the following commands
 <details>
 <summary<h3>Training on Other Characters</h3></summary>
 <br>
-</details>
+<details>
 
 ## Generating record files
 
