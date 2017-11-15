@@ -4,7 +4,7 @@
 * Make sure you have the prerequisites for the Object Detection API installed. The directions for installations can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 
 <details>
-<summary><b>For Santa Claus</b></summary>
+<summary>For Santa Claus</summary>
 
 * Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
 ** This only downloads the images for Santa Claus.
@@ -23,12 +23,15 @@ Run the following commands
 ```
 </details>
 <details>
-<summary><b>For Other Characters</b></summary>
+<summary>For Other Characters</summary>
 
 * Make a new directory in the character-finder/characters folder and name it the character. For example <br>
-	` mkdir characters/foobar `
-* Save all images of that character in that directory
+	` mkdir characters/foobar ` <br> Similarly do the same for the evaluation images in the eval\_images/ folder
 
+* Save all images of that character in that directory
+* Next step is to get bounding box imformation about the characters and store it in a csv which will later be converted to tf.record file. Done for both training and evaluation images.
+* Run the following command
+	` python detect_labels.py --annotation_file PATH_TO_CSV --images characters/ `
 </details>
 
 ## Generating record files
