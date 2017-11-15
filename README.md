@@ -22,7 +22,7 @@ Run the following commands
 <a name="abcd"></a>
 <details>
 <summary<h3>Training on Other Characters</h3></summary>
-
+<br>
 </details>
 
 ## Generating record files
