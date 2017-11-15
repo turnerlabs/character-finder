@@ -46,5 +46,5 @@ For training you need to construct an object-detection training pipeline.
 		  label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt"
 		}
 		```
-		change
+		change the ` input_path: "PATH_TO_BE_CONFIGURED/train.record" ` to point to the train.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the appropriate label map
 <a name="abcd"></a>
