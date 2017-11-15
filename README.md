@@ -77,7 +77,7 @@ For training, construct an object-detection training pipeline.
 
 * Changes in the .config file:
 	1. Adjust the number of classes depending on the number of characters training on
-	2 It is recommended to train the model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). 
+	2 It is recommended to train the model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). <br> 
 	Change the<br> ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
 	3. In the following Code snippet
 		```
