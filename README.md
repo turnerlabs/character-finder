@@ -37,7 +37,7 @@ Run the following commands
 **Note: Already existing train.csv and eval.csv have bounding box information for images of Santa Claus**
 * Label the images by clicking on the top left of the characters face first and then on the bottom right
 
-![](https://media.giphy.com/media/xUNd9BNT18JAOzc0wM/giphy.gif)
+	![](https://media.giphy.com/media/xUNd9BNT18JAOzc0wM/giphy.gif)
 </details>
 
 ## Generating record files
