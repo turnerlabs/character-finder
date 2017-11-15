@@ -3,7 +3,9 @@
 ## Prerequisites 
 * Make sure you have the prerequisites for the Object Detection API installed. The directions for installations can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 
-**For Santa Claus (For other characters follow these [instructions](#abcd))**
+<details>
+<summary><b>For Santa Claus (For other characters follow these [instructions](#abcd))</n></summary>
+
 * Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
 ** This only downloads the images for Santa Claus.
 
@@ -19,6 +21,7 @@ Run the following commands
  # From character-finder/
  python change_csv.py
 ```
+</details>
 <a name="abcd"></a>
 
 <details>
