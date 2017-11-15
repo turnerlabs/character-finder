@@ -22,7 +22,8 @@ Run the following commands
 <a name="abcd"></a>
 <details open>
 <summary><h3>Training on Other Characters</h3></summary>
-<details>
+</details>
+
 ## Generating record files
 
 
