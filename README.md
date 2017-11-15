@@ -7,6 +7,7 @@
 <summary><b>For Santa Claus</b></summary>
 
 * Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) images in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
+
 **This only downloads the images for Santa Claus.**
 
 Run the following commands 
@@ -76,7 +77,8 @@ For training, construct an object-detection training pipeline.
 
 * Changes in the .config file:
 	1. Adjust the number of classes depending on the number of characters training on
-	2 It is recommended to train the model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Change the<br> ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
+	2 It is recommended to train the model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). 
+	Change the<br> ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
 	3. In the following Code snippet
 		```
 		train_input_reader: {
