@@ -22,10 +22,12 @@ Run the following commands
 <a name="abcd"></a>
 
 <details>
-<summary>## Training on Other Characters</summary>
+<summary>Training on Other Characters</summary>
+
 * Make a new directory in the character-finder/characters folder and name it the character. For example
 	` mkdir characters/foobar `
 * Save all images of that character in that directory
+
 </details>
 
 ## Generating record files
