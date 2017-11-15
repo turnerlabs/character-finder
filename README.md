@@ -107,6 +107,14 @@ For training, construct an object-detection training pipeline.
 	```
 	python object_detection/train.py --logtostderr --train_dir PATH_TO_SAVE_CHECKPOINTS --pipeline_config_path PATH_TO_CONFIG_FILE
 	```
+* It is advised to run the evaluation job simultaneously with the training.
+	```
+	python object_detection/eval.py --logtostderr --checkpoint_dir PATH_TO_CHECKPOINT_DIR --eval_dir PATH_TO_EVAL_DIR --pipeline_config_path PATH_TO_CONFIG_FILE
+	```
+* Visualise the training and evaluation by running the folowing command
+	```
+	tensorboard --logdir PATH_TO_CHECKPOINT_DIR
+	```
 
 
 
