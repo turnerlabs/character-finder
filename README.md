@@ -38,12 +38,12 @@ For training you need to construct an object-detection training pipeline.
 * Changes in the config file:
 	1. Change the ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
 	2. 
-	```
-	train_input_reader: {
-	  tf_record_input_reader {
-	    input_path: "PATH_TO_BE_CONFIGURED/train.record"
-	  }
-	  label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt"
-	}
-	```
+		```
+		train_input_reader: {
+		  tf_record_input_reader {
+		    input_path: "PATH_TO_BE_CONFIGURED/train.record"
+		  }
+		  label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt"
+		}
+		```
 <a name="abcd"></a>
