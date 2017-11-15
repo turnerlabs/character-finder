@@ -24,7 +24,7 @@ Run the following commands
 <details>
 <summary>Training on Other Characters</summary>
 
-* Make a new directory in the character-finder/characters folder and name it the character. For example
+* Make a new directory in the character-finder/characters folder and name it the character. For example <br>
 	` mkdir characters/foobar `
 * Save all images of that character in that directory
 
