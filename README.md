@@ -7,7 +7,7 @@
 <summary>For Santa Claus</summary>
 
 * Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
-** This only downloads the images for Santa Claus.
+**This only downloads the images for Santa Claus.**
 
 Run the following commands 
 ```
@@ -17,21 +17,26 @@ Run the following commands
  # From character-finder/eval_images
  unzip santa.zip
  
- # Change the filneame attribute in the train and eval csvs to point to the correct location of the images
  # From character-finder/
  python change_csv.py
+ # This will change the path in the already existing csvs to point to the images in the correct directory
+ 
 ```
 </details>
 <details>
 <summary>For Other Characters</summary>
 
 * Make a new directory in the character-finder/characters folder and name it the character. For example <br>
-	` mkdir characters/foobar ` <br> Similarly do the same for the evaluation images in the eval\_images/ folder
+	` mkdir characters/foobar ` <br> Similarly do the same for the evaluation images <br>
+	` mkdir eval_images/foobar ` <br>
 
-* Save all images of that character in that directory
+* Save all training images for that character in `characters/foobar` and the evaluation images in `eval\_images/foobar`
 * Next step is to get bounding box imformation about the characters and store it in a csv which will later be converted to tf.record file. Done for both training and evaluation images.
 * Run the following command
 	` python detect_labels.py --annotation_file PATH_TO_CSV --images characters/ `
+**Note: Already existing train.csv and eval.csv have bounding box information for images of Santa Claus**
+* Label the images by clicking on the top left of the characters face first and then on the bottom right
+![](https://media.giphy.com/media/xUNd9BNT18JAOzc0wM/giphy.gif)
 </details>
 
 ## Generating record files
