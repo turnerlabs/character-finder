@@ -78,17 +78,17 @@ For training, construct an object-detection training pipeline.
 * Changes in the .config file:
 	1. Adjust the number of classes depending on the number of characters training on
 	2 It is recommended to train the model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). <br> 
-	Change the<br> ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
+	Change the<br> ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint to be used 
 	3. In the following Code snippet
 		```
 		train_input_reader: {
 		  tf_record_input_reader {
 		    input_path: "PATH_TO_BE_CONFIGURED/train.record"
 		  }
-		  label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt"
+		  label_map_path: "characters_label_map.pbtxt"
 		}
 		```
-		Change the ` input_path: "PATH_TO_BE_CONFIGURED/train.record" ` to point to the train.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the appropriate label map
+		Change the ` input_path: "PATH_TO_BE_CONFIGURED/train.record" ` to point to the full path of the train.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the full path of the label map.
 	3. In the following Code snippet
 		```
 		eval_input_reader: {
@@ -101,6 +101,12 @@ For training, construct an object-detection training pipeline.
   		  num_epochs: 1
 		}
 		```
-		Change the ` input_path: "PATH_TO_BE_CONFIGURED/eval.record" ` to point to the eval.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the appropriate label map
+		Change the ` input_path: "PATH_TO_BE_CONFIGURED/eval.record" ` to point to the full path of the eval.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the full path of the label map.
+
+* Run the training job
+	```
+	python object_detection/train.py --logtostderr --train_dir PATH_TO_SAVE_CHECKPOINTS --pipeline_config_path PATH_TO_CONFIG_FILE
+	```
+
 
 
