@@ -21,10 +21,10 @@ Run the following commands
 ```
 <a name="abcd"></a>
 
-
+<details>
 <summary>Training on Other Characters</summary>
 <p>Will ad some information here</p>
-
+</details>
 
 ## Generating record files
 
@@ -71,4 +71,4 @@ For training you need to construct an object-detection training pipeline.
 		```
 		Change the ` input_path: "PATH_TO_BE_CONFIGURED/eval.record" ` to point to the eval.record file created in the previous step and the ` label_map_path: "PATH_TO_BE_CONFIGURED/characters_label_map.pbtxt" ` to point to the appropriate label map
 
-<h3>Hello</h3>
+
