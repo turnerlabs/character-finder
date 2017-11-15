@@ -33,7 +33,12 @@ Run the following commands
 * Save all training images for that character in `characters/foobar` and the evaluation images in `eval\_images/foobar`
 * Next step is to get bounding box imformation about the characters and store it in a csv which will later be converted to tf.record file. Done for both training and evaluation images.
 * Run the following command
-	` python detect_labels.py --annotation_file PATH_TO_CSV --images characters/ `
+	```
+	# For Training Images
+	python detect_labels.py --annotation_file PATH_TO_CSV --images characters/
+	# For Evaluation Images
+	python detect_labels.py --annotation_file PATH_TO_CSV --images eval_images/
+	```
 **Note: Already existing train.csv and eval.csv have bounding box information for images of Santa Claus**
 * Label the images by clicking on the top left of the characters face first and then on the bottom right
 
