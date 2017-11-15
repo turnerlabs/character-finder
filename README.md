@@ -20,9 +20,8 @@ Run the following commands
  python change_csv.py
 ```
 <a name="abcd"></a>
-<details>
- <summary><h3>Training on Other Characters</h3></summary>
- <br>
+<details><summary><h3>Training on Other Characters</h3></summary>
+<br>
 </details>
 
 ## Generating record files
