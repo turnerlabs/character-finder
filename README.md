@@ -21,9 +21,9 @@ Run the following commands
 ```
 <a name="abcd"></a>
 
-<details>
-	<summary><h3>Training on Other Characters</h3></summary>
-	<p>Will ad some information here</p>
+
+<summary>Training on Other Characters</summary>
+<p>Will ad some information here</p>
 
 
 ## Generating record files
