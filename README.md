@@ -4,7 +4,7 @@
 * Make sure you have the prerequisites for the Object Detection API installed. The directions for installations can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 
 <details>
-<summary>For Santa Claus</summary>
+<summary><b>For Santa Claus</b></summary>
 
 * Download the [training](https://www.dropbox.com/s/c8tbm4obfdupqgs/santa.zip?dl=1) in character-finder/characters directory  and [evaluation](https://www.dropbox.com/s/xij9f2r1wzksfso/santa.zip?dl=1) images in the characterfinder/eval\_image directory
 **This only downloads the images for Santa Claus.**
@@ -24,7 +24,7 @@ Run the following commands
 ```
 </details>
 <details>
-<summary>For Other Characters</summary>
+<summary><b>For Other Characters</b></summary>
 
 * Make a new directory in the character-finder/characters folder and name it the character. For example <br>
 	` mkdir characters/foobar ` <br> Similarly do the same for the evaluation images <br>
@@ -43,30 +43,41 @@ Run the following commands
 * Label the images by clicking on the top left of the characters face first and then on the bottom right
 
 	![](https://media.giphy.com/media/xUNd9BNT18JAOzc0wM/giphy.gif)
+* Modify the `characters_label_map.pbtext` file depending on number of characters. For example
+	```
+	item {
+	    id: 1
+	    name: foobar1
+	}
+	item {
+	    id: 2
+	    name: foobar2
+	}
+	```
 </details>
 
 ## Generating record files
 
 
-* After the csv points to the correct location, we can generate the record files
+* After generating csv, generate the record files
 	 ``` bash
 	# Generate training record
-	python --csv_input train.csv --output_path train.record --label_map_path characters_label_map.pbtext 
+	python --csv_input PATH_TO_TRAIN_CSV --output_path PATH_TO_TRAIN.record --label_map_path characters_label_map.pbtext 
 	``` 
 	``` bash
 	# Generate evaluation record
-	python --csv_input eval.csv --output_path eval.record --label_map_path characters_label_map.pbtext 
+	python --csv_input PATH_TO_EVAL_CSV --output_path PATH_TO_EVAL.record --label_map_path characters_label_map.pbtext 
 	```
 
 
 ## Training
-For training you need to construct an object-detection training pipeline. 
-* You can use any of the config files present in object\_detection/samples/configs/ as basis
-* Adjust the number of classes depending on the number of character you are training on
-* It is recommended to train your model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+For training, construct an object-detection training pipeline. 
+* Use any of the config files present in object\_detection/samples/configs/ as basis
+
 * Changes in the .config file:
-	1. Change the ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
-	2. In the following Code snippet
+	1. Adjust the number of classes depending on the number of characters training on
+	2 It is recommended to train the model from a pre-trained checkpoint. Tensorflow provides several pre-trained checkpoints which can be found [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Change the<br> ` fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" ` to point to the checkpoint you want to use 
+	3. In the following Code snippet
 		```
 		train_input_reader: {
 		  tf_record_input_reader {
