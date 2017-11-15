@@ -24,7 +24,7 @@ Run the following commands
 <details>
 	<summary><h3>Training on Other Characters</h3></summary>
 	<p>Will ad some information here</p>
-</details>
+
 
 ## Generating record files
 
